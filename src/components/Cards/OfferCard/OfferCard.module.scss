@@ -1,0 +1,32 @@
+.main-texts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  text-align: center;
+  background-color: $white-color;
+  padding: 25px 30px;
+
+  .image {
+    width: 125px;
+    margin: 0 auto;
+  }
+
+  .card_title {
+    color: $dark-color;
+    @include base-text;
+  }
+
+  .card_price {
+    @include body-text;
+    color: $black-color;
+  }
+
+  .button {
+    color: $white-color;
+    background-color: $accent-color;
+    display: inline-flex;
+    width: 135px;
+    margin: 0 auto;
+  }
+}

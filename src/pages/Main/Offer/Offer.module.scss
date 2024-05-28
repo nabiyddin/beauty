@@ -1,0 +1,74 @@
+.offer_section {
+  padding-top: 80px;
+  padding-bottom: 132px;
+  background-color: $gray-color;
+
+  .main_text_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 38px;
+  }
+
+  .offer_cards_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 100px;
+
+    .left_card {
+      background-color: $accent-color;
+      padding: 35px 45px 35px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $white-color;
+
+      h4 {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      p {
+        margin: 25px 0;
+        @include caption-text;
+      }
+
+      input {
+        padding: 9px 0 9px 25px;
+        outline: none;
+        border-radius: 30px;
+        border: none;
+      }
+    }
+
+    .right_card {
+      padding: 35px 0 35px 40px;
+      color: $white-color;
+      background-color: $accent-color;
+
+      h4 {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      p {
+        margin: 25px 0;
+        @include caption-text;
+      }
+
+      .button {
+        padding: 9px 28px 9px 29px;
+        border-radius: 30px;
+        border: 2px solid $white-color;
+        @include caption-text;
+      }
+    }
+  }
+}
